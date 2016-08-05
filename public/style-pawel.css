@@ -1,25 +1,47 @@
 body {
   margin: 0;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Open Sans', cursive;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
-  height: 20vh;
   background-color: #bb9c9a;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+  font-family: 'Yrsa', serif;
+  font-size: 7rem;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0 0 2rem 0;
 }
 
 section {
   background-image: url('./artpic.jpg');
   background-size: contain;
-  height: 80vh;
+  /*height: 80vh;*/
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
-  color: whitesmoke;
-  font-size: 50px;
+  color: #404040;
 }
 
 input, button, label {
@@ -29,13 +51,10 @@ input, button, label {
   height: 50px;
 }
 
-input {
-  text-align: center;
-}
-
 button {
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 2rem;
+  padding: 1rem;
   background-color: #ccca94;
   color: whitesmoke;
   transition: 1s;
@@ -47,20 +66,22 @@ button:hover {
 }
 
 #chat {
-  height: 55vh;
-  width: 75vw;
+  /*height: 50vh;*/
+  overflow: scroll;
+  /*width: 75vw;*/
 }
 
 #content-wrap {
   display: none;
+  flex: 1;
 }
 
 #chat-wrap {
   float: left;
-  border: 3px solid #202020;
+  /*border: 3px solid #202020;*/
   padding: 2rem;
   margin-left: 1rem;
-  border-radius: 8px;
+  /*border-radius: 8px;*/
   background-color: #e8e8e8;
 }
 
@@ -82,9 +103,9 @@ button:hover {
   color: #e83624;
 }
 
-/*#nickname-wrap {
-  margin-top: 20rem;
-}*/
+#nickname-wrap {
+  flex: 1;
+}
 
 #users {
   font-size: 1.7rem;
@@ -93,8 +114,8 @@ button:hover {
 
 .chat-jumbo {
   display: none;
-  border: 3px solid #202020;
-  padding: 15px;
+  /*border: 3px solid #202020;*/
+  /*padding: 15px;*/
   background-color: #baabc4;
 }
 

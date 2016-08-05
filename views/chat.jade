@@ -8,18 +8,19 @@ html(lang='en')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css')
     // Bootstrap
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/spacelab/bootstrap.min.css')
-    link(href='https://fonts.googleapis.com/css?family=Poiret+One', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Poiret+One|Open+Sans|Oswald|Yrsa', rel='stylesheet', type='text/css')
     link(rel='stylesheet', type='text/css', href='style-pawel.css')
   body
     // Navigation Bar
     header
-      h1  The Mysteriously Deceiving Chat 
+      h1 Poppycock
+      h2 A Mysteriously Deceiving Chat 
     section#nickname-wrap
-      container
-        form#set-nickname
-          label#pick-nickname-text(for='nickname')  Nickname 
-          input#nickname(type='text', name='nickname', placeholder='Enter Name Here If You Dare!')
-          button(type='submit')  Join Chat 
+      //- container
+      form#set-nickname
+        label#pick-nickname-text(for='nickname')  Nickname 
+        input#nickname(type='text', name='nickname', placeholder='Enter Name Here If You Dare!')
+        button(type='submit')  Join Chat 
     #content-wrap.container
       #chat-wrap.row.col-lg-8.col-md-8
         #chat

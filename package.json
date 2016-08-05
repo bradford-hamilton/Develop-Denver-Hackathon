@@ -1,0 +1,18 @@
+{
+  "name": "develop-denver",
+  "version": "1.0.0",
+  "description": "Chat app for random insults",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "mongoose": "^4.5.8",
+    "socket.io": "^1.4.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bradford Lamson-Scribner",
+  "license": "MIT"
+}

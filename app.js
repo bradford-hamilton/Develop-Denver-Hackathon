@@ -1,3 +1,4 @@
+require('dotenv');
 var express = require('express'),
     app = express(),
     server = require('http').createServer(app),
@@ -7,7 +8,7 @@ var express = require('express'),
     router = require('./routes/server-routes'),
     users = {};
 
-mongoose.connect((process.env.MONGODB_URI || 'mongodb://localhost/develop-denver'));
+mongoose.connect( (process.env.MONGODB_URI || 'mongodb://localhost/' + process.env.LOCAL_MONGO) );
 
 // Static assets
 app.use(express.static('./public'));

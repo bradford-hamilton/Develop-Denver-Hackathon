@@ -28,10 +28,14 @@ $(document).ready(function() {
   // When user clicks enter or send on their message
   $messageForm.submit(function(event) {
     event.preventDefault();
-    socket.emit('send message', $messageBox.val(), function(data) {
-      $chat.append('<span class="error">' + data + '</span><br>');
+    var insultMessage;
+    $.get('https://cors-anywhere.herokuapp.com/http://quandyfactory.com/insult/json', function(data) {
+      var insult = ', you ' + data.insult.split(' ').splice(3,data.insult.length).join(' ').toLowerCase();
+      socket.emit('send message', $messageBox.val() + insult, function(data) {
+        $chat.append('<span class="error">' + data + '</span><br>');
+      });
+      $messageBox.val('');
     });
-    $messageBox.val('');
   });
 
   // Adds current chat users to the users list

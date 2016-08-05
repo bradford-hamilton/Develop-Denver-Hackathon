@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Poiret One', cursive;
+}
+
+header {
+  height: 20vh;
+  background-color: #bb9c9a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  background-image: url('./artpic.jpg');
+  background-size: contain;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 50px;
+}
+
+input, button, label {
+  padding: 20px;
+  display: block;
+  width: 300px;
+  height: 50px;
+}
+
+input {
+  text-align: center;
+}
+
+button {
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: #ccca94;
+  color: whitesmoke;
+  transition: 1s;
+}
+
+button:hover {
+  background-color: #97aea8;
+  color: black;
+}
+
+#chat {
+  height: 55vh;
+  width: 75vw;
+}
+
+#content-wrap {
+  display: none;
+}
+
+#chat-wrap {
+  float: left;
+  border: 3px solid #202020;
+  padding: 2rem;
+  margin-left: 1rem;
+  border-radius: 8px;
+  background-color: #e8e8e8;
+}
+
+.error {
+  color: red;
+}
+
+#send-message {
+  border-top: 2px solid black;
+  padding: 1rem;
+}
+
+.msg {
+  color: #111ba3;
+  font-size: 1.5rem;
+}
+
+#bold {
+  color: #e83624;
+}
+
+/*#nickname-wrap {
+  margin-top: 20rem;
+}*/
+
+#users {
+  font-size: 1.7rem;
+  margin: .5rem;
+}
+
+.chat-jumbo {
+  display: none;
+  border: 3px solid #202020;
+  padding: 15px;
+  background-color: #baabc4;
+}
+
+#pick-nickname-text {
+  color: #5d5d5d;
+  font-size: 1.8rem;
+}
